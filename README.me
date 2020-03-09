@@ -1,0 +1,52 @@
+virtualenv ENVname
+
+#or
+
+virtualenv -p python3 ENVname
+
+source Scripts/activate
+
+or deactivate
+
+pip install django ==2
+
+django-admin startproject restapi  // new project restapi
+
+python manage.py runserver // runing new progect to local
+
+
+#/**************************/
+
+python manage.py startapp blog
+
+#super user:
+
+python manage.py createsuperuser
+
+#or
+
+winpty python manage.py createsuperuser
+
+
+python -m pip install Pillow
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+
+
+#/********************************************/
+
+#install socket connaction to app
+
+
+(env)$ pip install django==1.10.5 channels==1.0.2 asgi_redis==1.0.0
+
+(env)$ django-admin.py startproject example_channels
+
+(env)$ cd example_channels
+
+(env)$ python manage.py startapp example
+
+(env)$ python manage.py migrate
